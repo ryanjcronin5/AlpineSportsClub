@@ -4,6 +4,9 @@ module.exports = {
         "./src/**/*.{js,jsx,ts,tsx}",
     ],
     theme: {
+        backgroundSize: {
+            full: 'full',
+        },
         fontFamily: {
             'averia-sans-libre': ['Averia Sans Libre', 'san-serif']
         },
