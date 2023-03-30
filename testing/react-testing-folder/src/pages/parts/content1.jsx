@@ -3,14 +3,17 @@ import React from "react";
 function Content1() {
     return (
         <div className="flex flex-col w-auto h-auto">
-            <img src="./img/image1.png" alt="Looking down snowy mountaions"></img>
+            {/* Header Image */}
+            <img src="image1.png" alt="Looking down snowy mountaions"></img>
 
+            {/* Info Header */}
             <div className="py-3 px-5 rounded-lg bg-opacity-75 bg-gray-600 text-white text-justify mx-4 my-2">
                 <p className="align-middle">
                     Alpine Sports Club Inc. (ASC) is a skiing/snowboarding, tramping, mountaineering, and outdoor recreation club based in Auckland New Zealand. ASC has 3 Huts available for members exclusive use during the Summer & Winter Seasons. Our very well-appointed bush Hut in the Waitakere Ranges, an hours drive from downtown Auckland. Located right up on the ridges of Whakapapa Ski Field are ASC's 2 Ski Huts; the A-Frame & Ruapehu Hut.
                 </p>
             </div>
 
+            {/* Page Nav Bar */}
             <nav className="bg-white border-gray-200">
                 <div className="hidden w-full md:block md:w-auto">
                     <ul className="flex flex-col p-4 place-content-center md:p-0 mt-4 border border-gray-100 bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:bg-white">
@@ -39,12 +42,16 @@ function Content1() {
                 </div>
             </nav>
 
+            {/* Club News */}
             <div className="py-3 px-5 mx-4 my-2" id="#news">
                 <p className="text-xl leading-loose">Club News</p>
             </div>
 
+            {/* Club Huts*/}
             <div className="py-3 px-5 mx-4 my-2" id="#huts">
                 <div className="flex flex-row justify-center">
+
+                    {/* Waitakere Hut */}
                     <div className="flex justify-center mx-1">
                         <div
                             className="block max-w-sm rounded-lg bg-white p-6 shadow-lg">
@@ -65,6 +72,8 @@ function Content1() {
                             </button>
                         </div>
                     </div>
+
+                    {/* Ruapehu Hut */}
                     <div className="flex justify-center mx-1">
                         <div
                             className="block max-w-sm rounded-lg bg-white p-6 shadow-lg">
@@ -85,6 +94,8 @@ function Content1() {
                             </button>
                         </div>
                     </div>
+
+                    {/* A Frame */}
                     <div className="flex justify-center mx-1">
                         <div
                             className="block max-w-sm rounded-lg bg-white p-6 shadow-lg">
@@ -107,6 +118,7 @@ function Content1() {
                 </div>
             </div>
 
+            {/* Club Nights */}
             <div className="py-3 px-5 mx-4 my-2" id="#nights">
                 <p className="text-xl leading-loose">Club Nights</p>
                 <p className="text-justify">
@@ -119,21 +131,25 @@ function Content1() {
                 </p>
             </div>
 
+            {/* Club Magazine */}
             <div className="py-3 px-5 mx-4 my-2" id="#mag">
                 <p className="text-xl leading-loose">Alpine Sports Club Magazine</p>
                 <p>Alpinesport is published bi-monthly except for January in electronic format and is free of charge. Additional copies of the magazine are available on request.</p>
             </div>
 
+            {/* Club Events */}
             <div className="py-3 px-5 mx-4 my-2" id="#events">
-                <p>Club Events</p>
+                <p className="text-xl leading-loose">Club Events</p>
             </div>
 
+            {/* Club History */}
             <div className="py-3 px-5 mx-4 my-2" id="#history">
-                <p>Club History</p>
+                <p className="text-xl leading-loose">Club History</p>
             </div>
 
+            {/* Club Rules */}
             <div className="py-3 px-5 mx-4 my-2" id="#rules">
-                <p>Club Rules</p>
+                <p className="text-xl leading-loose">Club Rules</p>
             </div>
 
         </div>
