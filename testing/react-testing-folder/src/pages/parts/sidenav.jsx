@@ -2,16 +2,15 @@ import React from "react";
 
 function SideNav() {
     return (
-        <div id="sidenav" className="flex flex-col h-screen p-3 bg-white shadow w-1/4">
-            <div className="space-y-3">
-
+        <div id="sidenav" className="flex flex-col h-fill p-3 bg-white shadow w-1/3">
+            <div className="space-y-3 fixed">
                 <div className="relative">
                     <span className="absolute inset-y-0 left-0 flex items-center py-4">
                         <button type="submit" className="p-2 focus:outline-none focus:ring">
                             <i className="fas fa-search text-2xl"></i>
                         </button>
                     </span>
-                    <input type="search" name="Search" placeholder="Search..." className="w-full py-2 pl-10 text-sm rounded-md focus:outline-none" />
+                    <input type="search" name="Search" placeholder="Search..." className="w-min py-2 pl-10 text-sm rounded-md focus:outline-none" />
                 </div>
 
                 <div className="flex-1">
