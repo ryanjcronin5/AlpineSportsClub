@@ -3,8 +3,9 @@ import React from "react";
 function Content1() {
     return (
         <div className="flex flex-col w-auto h-auto">
+
             {/* Header Image */}
-            <img src="image1.png" alt="Looking down snowy mountaions"></img>
+            <img src=".\img\image1.png" alt="Looking down snowy mountaions"></img>
 
             {/* Info Header */}
             <div className="py-3 px-5 rounded-lg bg-opacity-75 bg-gray-600 text-white text-justify mx-4 my-2">
@@ -43,12 +44,12 @@ function Content1() {
             </nav>
 
             {/* Club News */}
-            <div className="py-3 px-5 mx-4 my-2" id="#news">
+            <div className="py-3 px-5 mx-4 my-2" id="news">
                 <p className="text-xl leading-loose">Club News</p>
             </div>
 
             {/* Club Huts*/}
-            <div className="py-3 px-5 mx-4 my-2" id="#huts">
+            <div className="py-3 px-5 mx-4 my-2" id="huts">
                 <div className="flex flex-row justify-center">
 
                     {/* Waitakere Hut */}
@@ -119,7 +120,7 @@ function Content1() {
             </div>
 
             {/* Club Nights */}
-            <div className="py-3 px-5 mx-4 my-2" id="#nights">
+            <div className="py-3 px-5 mx-4 my-2" id="nights">
                 <p className="text-xl leading-loose">Club Nights</p>
                 <p className="text-justify">
                     On the first Tuesday of each month (except January) at 7:30pm.
@@ -132,23 +133,23 @@ function Content1() {
             </div>
 
             {/* Club Magazine */}
-            <div className="py-3 px-5 mx-4 my-2" id="#mag">
+            <div className="py-3 px-5 mx-4 my-2" id="mag">
                 <p className="text-xl leading-loose">Alpine Sports Club Magazine</p>
                 <p>Alpinesport is published bi-monthly except for January in electronic format and is free of charge. Additional copies of the magazine are available on request.</p>
             </div>
 
             {/* Club Events */}
-            <div className="py-3 px-5 mx-4 my-2" id="#events">
+            <div className="py-3 px-5 mx-4 my-2" id="events">
                 <p className="text-xl leading-loose">Club Events</p>
             </div>
 
             {/* Club History */}
-            <div className="py-3 px-5 mx-4 my-2" id="#history">
+            <div className="py-3 px-5 mx-4 my-2" id="history">
                 <p className="text-xl leading-loose">Club History</p>
             </div>
 
             {/* Club Rules */}
-            <div className="py-3 px-5 mx-4 my-2" id="#rules">
+            <div className="py-3 px-5 mx-4 my-2" id="rules">
                 <p className="text-xl leading-loose">Club Rules</p>
             </div>
 
