@@ -1,10 +1,14 @@
 import { Outlet, Link } from "react-router-dom";
+import { useState } from "react";
 
 function SideNav() {
+    const [isNavOpen, setIsOpen] = useState(false);
     return (
         <>
             <div id="sidenav" className="flex flex-col h-fill p-3 bg-white shadow w-1/3">
                 <div className="space-y-3 fixed">
+
+                    {/* Search Bar */}
                     <div className="relative">
                         <span className="absolute inset-y-0 left-0 flex items-center py-4">
                             <button type="submit" className="p-2 focus:outline-none focus:ring">
@@ -17,7 +21,7 @@ function SideNav() {
                     <div className="flex-1">
                         <ul className="pt-2 pb-4 space-y-1 text-sm">
 
-                            <Link to="/">
+                            <Link to="/"> {/* Home */}
                                 <li className="rounded-sm hover:bg-slate-100">
                                     <div className="flex items-center p-2 space-x-3 rounded-md">
                                         <i className="fas fa-home text-2xl"></i>
@@ -26,7 +30,7 @@ function SideNav() {
                                 </li>
                             </Link>
 
-                            <Link to="/act_huts">
+                            <Link to="/act_huts"> {/* Activities & Huts */}
                                 <li className="rounded-sm hover:bg-slate-100">
                                     <div className="flex items-center p-2 space-x-3 rounded-md">
                                         <i className="fas fa-campground text-2xl"></i>
@@ -35,7 +39,7 @@ function SideNav() {
                                 </li>
                             </Link>
 
-                            <Link to="/join_club">
+                            <Link to="/join_club"> {/* Join the Club */}
                                 <li className="rounded-sm hover:bg-slate-100">
                                     <div className="flex items-center p-2 space-x-3 rounded-md">
                                         <i className="fas fa-user-plus text-2xl"></i>
@@ -44,7 +48,7 @@ function SideNav() {
                                 </li>
                             </Link>
 
-                            <Link to="/login">
+                            <Link to="/login"> {/* Log In */}
                                 <li className="rounded-sm hover:bg-slate-100">
                                     <div className="flex items-center p-2 space-x-3 rounded-md">
                                         <i className="fas fa-user-circle text-2xl"></i>
