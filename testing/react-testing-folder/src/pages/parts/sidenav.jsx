@@ -5,9 +5,9 @@ function SideNav() {
     const [isNavOpen, setIsNavOpen] = useState(false);
     return (
         <>
-            <div id="sidenav" className="flex flex-col h-fill p-3 bg-white shadow w-1/6">
+            <div id="sidenav" className="flex flex-col h-fill w-fill p-3 bg-white shadow">
                 <div className="space-y-3 fixed">
-                    <section className="MOBILE-MENU flex lg:hidden">
+                    <section className="MOBILE-MENU flex lg:hidden w-full fixed bg-dark-500">
                         <div className="HAMBURGER-ICON space-y-2" onClick={() => setIsNavOpen((prev) => !prev)}>
                             <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
                             <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
@@ -15,14 +15,14 @@ function SideNav() {
                         </div>
 
                         <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
-                            <div className="space-x-72">
+                            
                                 <div className="CROSS-ICON absolute top-0 right-0 px-1 py-1" onClick={() => setIsNavOpen(false)}>
                                     <svg className="h-8 w-8 text-gray-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                         <line x1="18" y1="6" x2="6" y2="18" />
                                         <line x1="6" y1="6" x2="18" y2="18" />
                                     </svg>
                                 </div>
-                                <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-start space-y-6 justify-between min-h-[15rem] w-80">
+                                <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-start space-y-6 justify-between min-h-[15rem] w-fit">
                                     <Link to="/">
                                         <li className="rounded-sm hover:bg-slate-100">
                                             <div className="flex items-center p-2 space-x-3 rounded-md">
@@ -56,7 +56,6 @@ function SideNav() {
                                         </li>
                                     </Link>
                                 </ul>
-                            </div>
                         </div>
                     </section>
                     <ul className="DESKTOP-MENU hidden lg:flex lg:flex-col">

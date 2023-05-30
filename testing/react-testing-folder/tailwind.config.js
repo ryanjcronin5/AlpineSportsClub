@@ -15,6 +15,14 @@ module.exports = {
                 'header-image': "url('./img/image1.png')",
             }
         },
+        screens: {
+            'mobileS': '320px',
+            'mobileM': '375px',
+            'mobileL': '425px',
+            'tablet': '640px',
+            'laptop': '1024',
+            'desktop': '1280px',
+        },
     },
     plugins: [],
 }

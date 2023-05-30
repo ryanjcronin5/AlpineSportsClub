@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
     return (
-        <div id="header" className="flex w-full h-auto">
+        <div id="header" className="flex w-screen h-auto">
             <div className="p-3">
                 <div className="flex flex-row">
                     <div>
